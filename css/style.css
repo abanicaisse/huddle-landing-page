@@ -1,0 +1,26 @@
+:root {
+    --clr-violet:hsl(227, 40%, 49%);
+    --clr-red-125: hsl(300, 69%, 71%);
+    --font-poppins:'Poppins', sans-serif;
+    --font-opensans: 'Open Sans', sans-serif
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-opensans);
+}
+
+nav img {
+    background-color: blue;
+}
