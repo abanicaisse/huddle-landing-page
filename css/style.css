@@ -1,5 +1,5 @@
 :root {
-    --clr-violet:hsl(227, 40%, 49%);
+    --clr-violet: hsl(257, 40%, 49%);
     --clr-red-125: hsl(300, 69%, 71%);
     --font-poppins:'Poppins', sans-serif;
     --font-opensans: 'Open Sans', sans-serif
@@ -16,11 +16,101 @@ html {
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100%;
+    background-image: url('/assets/images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-color: var(--clr-violet);
     font-family: var(--font-opensans);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+nav {
+    width: 85%;
+    margin-bottom: 2rem;
 }
 
 nav img {
     background-color: blue;
+    transform: scale(.5);
+    margin: 0 -4rem;
+}
+
+main {
+    width: 85%;
+}
+
+main .illustration {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+main .illustration > img {
+    max-width: 100%;
+}
+
+main .description {
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+main .description > h2 {
+    font-family: var(--font-poppins);
+    margin-bottom: 1rem;
+}
+
+main .description > p {
+    margin-bottom: 2rem;
+}
+
+main .description > a {
+    background-color: white;
+    color: var(--clr-violet);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2rem;
+    padding: .5rem 4rem;
+    margin-bottom: 10rem;
+}
+
+main .attribution {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+main .attribution > div + div {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+main .attribution > div > a {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+main .attribution > div > a + a {
+    margin-left: 1rem;
+}
+
+main .attribution > div:nth-child(1) {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+main .attribution > div:nth-child(1) > p > a {
+    color: var(--clr-red-125);
+    font-weight: 600;
 }
